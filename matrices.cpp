@@ -14,11 +14,11 @@ int main() {
 
 
 void matrixAdd() {
-	int m1[2][2] = { {2,2}, {2,2} };
-	int m2[2][2] = { {1,1}, {1,1} };
+	int m1[2][2]; // declaration
+	int m2[2][2];
 	int addition[2][2];
 
-	std::cout << "Enter values for M1: ";
+	std::cout << "Enter values for M1: "; // m1 input
 
 	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 2; j++) {
@@ -27,7 +27,7 @@ void matrixAdd() {
 	}
 
 	std::cout << std::endl;
-	std::cout << "Enter values for M2: ";
+	std::cout << "Enter values for M2: "; // m2 input
 
 		for (int i = 0; i < 2; i++) {
 			for (int j = 0; j < 2; j++) {
@@ -39,7 +39,7 @@ void matrixAdd() {
 
 
 
-	for (int i = 0; i < 2; i++) {
+	for (int i = 0; i < 2; i++) { // addition operation
 
 		for (int j = 0; j < 2; j++) {
 
@@ -49,7 +49,7 @@ void matrixAdd() {
 	}
 
 
-	for (int x = 0; x < 2; x++) {
+	for (int x = 0; x < 2; x++) { // prints the sum of the two matrices 
 
 		std::cout << "[";
 
@@ -64,14 +64,14 @@ void matrixAdd() {
 		std::cout << "]";
 		std::cout << std::endl;
 	}
-}  // 2X2 Matrix Addition with Input
+} 
 
 void matrixSub() {
-	int m1[2][2] = { {2,2}, {2,2} };
-	int m2[2][2] = { {1,1}, {1,1} };
+	int m1[2][2]; // declaration
+	int m2[2][2];
 	int subtraction[2][2];
 
-	std::cout << "Enter values for M1 (2x2): ";
+	std::cout << "Enter values for M1 (2x2): "; // m1 input
 
 	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 2; j++) {
@@ -80,7 +80,7 @@ void matrixSub() {
 	}
 
 	std::cout << std::endl;
-	std::cout << "Enter values for M2 (2x2): ";
+	std::cout << "Enter values for M2 (2x2): "; // m2 input
 
 	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 2; j++) {
@@ -90,7 +90,7 @@ void matrixSub() {
 
 
 
-	for (int i = 0; i < 2; i++) {
+	for (int i = 0; i < 2; i++) { // subtraction operation
 
 		for (int j = 0; j < 2; j++) {
 
@@ -100,7 +100,7 @@ void matrixSub() {
 	}
 
 
-	for (int x = 0; x < 2; x++) {
+	for (int x = 0; x < 2; x++) { // prints the difference of the two martrices 
 
 		std::cout << "[";
 
@@ -118,11 +118,11 @@ void matrixSub() {
 }
 
 void matrixMul() {
-	int m1[2][2] = { {2,2}, {2,2} };
-	int m2[2][2] = { {1,1}, {1,1} };
+	int m1[2][2]; // declaration
+	int m2[2][2];
 	int multiplication[2][2];
 
-	std::cout << "Enter values for M1 (2x2): ";
+	std::cout << "Enter values for M1 (2x2): "; // m1 input
 
 	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 2; j++) {
@@ -131,7 +131,7 @@ void matrixMul() {
 	}
 
 	std::cout << std::endl;
-	std::cout << "Enter values for M2 (2x2): ";
+	std::cout << "Enter values for M2 (2x2): "; // m2 input
 
 	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 2; j++) {
@@ -141,7 +141,7 @@ void matrixMul() {
 
 
 
-	for (int i = 0; i < 2; i++) {
+	for (int i = 0; i < 2; i++) { // multiplication operation
 
 		for (int j = 0; j < 2; j++) {
 
@@ -151,7 +151,7 @@ void matrixMul() {
 	}
 
 
-	for (int x = 0; x < 2; x++) {
+	for (int x = 0; x < 2; x++) { // prints the product of the two matrices
 
 		std::cout << "[";
 
@@ -171,8 +171,8 @@ void matrixMul() {
 void matrixPrint() {
 
 
-	int m1[2][2];;
-	std::cout << "Enter values for a matrix (2x2): ";
+	int m1[2][2];; // declaration
+	std::cout << "Enter values for a matrix (2x2): "; // matrix input
 
 	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 2; j++) {
@@ -180,7 +180,7 @@ void matrixPrint() {
 		}
 	}
 
-	for (int i = 0; i < 2; i++) {
+	for (int i = 0; i < 2; i++) { // prints matrix
 		
 		std::cout << "[";
 		for (int j = 0; j < 2; j++) {
