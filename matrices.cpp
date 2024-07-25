@@ -9,7 +9,7 @@ void matrixPrint();
 int main() {
 
 
-	matrixAdd();
+	matrixMul();
 }
 
 
@@ -29,11 +29,11 @@ void matrixAdd() {
 	std::cout << std::endl;
 	std::cout << "Enter values for M2: "; // m2 input
 
-		for (int i = 0; i < 2; i++) {
-			for (int j = 0; j < 2; j++) {
-				std::cin >> m2[i][j];
-			}
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 2; j++) {
+			std::cin >> m2[i][j];
 		}
+	}
 
 
 
@@ -64,7 +64,7 @@ void matrixAdd() {
 		std::cout << "]";
 		std::cout << std::endl;
 	}
-} 
+}
 
 void matrixSub() {
 	int m1[2][2]; // declaration
@@ -118,44 +118,44 @@ void matrixSub() {
 }
 
 void matrixMul() {
-int m1[2][2];
-int m2[2][2];
-int multiplication[2][2] = { {0, 0}, {0, 0} };
+	int m1[2][2];
+	int m2[2][2];
+	int multiplication[2][2] = { {0, 0}, {0, 0} };
 
-std::cout << "Enter values for m1 (2x2): ";
-for (int i = 0; i < 2; i++) {
-	for (int j = 0; j < 2; j++) {
-		std::cin >> m1[i][j];
-	}
-}
-std::cout << "Enter values for m2 (2x2): ";
-
-for (int i = 0; i < 2; i++) {
-	for (int j = 0; j < 2; j++) {
-		std::cin >> m2[i][j];
-	}
-}
-
-for (int i = 0; i < 2; i++) { // i = rows
-	for (int j = 0; j < 2; j++) { // j = col
-		for (int x = 0; x < 2; x++) { // x = index of current row / col
-			multiplication[i][x] = multiplication[i][x] + m1[i][x] * m2[x][j]; // m1 rows multiplied by m2 cols
+	std::cout << "Enter values for m1 (2x2): ";
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 2; j++) {
+			std::cin >> m1[i][j];
 		}
 	}
-}
+	std::cout << "Enter values for m2 (2x2): ";
 
-for (int i = 0; i < 2; i++) {
-	std::cout << "[";
-	for (int j = 0; j < 2;j++) {
-		std::cout << multiplication[i][j];
-		if (j <= 0) {
-			std::cout << ", ";
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 2; j++) {
+			std::cin >> m2[i][j];
 		}
-
 	}
-	std::cout << "]";
-	std::cout << std::endl;
-}
+
+	for (int i = 0; i < 2; i++) { // i = rows
+		for (int j = 0; j < 2; j++) { // j = col
+			for (int x = 0; x < 2; x++) { // x = index of current row / col
+				multiplication[i][j] = multiplication[i][j] + m1[i][x] * m2[x][j]; // m1 rows multiplied by m2 cols
+			}
+		}
+	}
+
+	for (int i = 0; i < 2; i++) {
+		std::cout << "[";
+		for (int j = 0; j < 2; j++) {
+			std::cout << multiplication[i][j];
+			if (j <= 0) {
+				std::cout << ", ";
+			}
+
+		}
+		std::cout << "]";
+		std::cout << std::endl;
+	}
 }
 
 void matrixPrint() {
@@ -171,7 +171,7 @@ void matrixPrint() {
 	}
 
 	for (int i = 0; i < 2; i++) { // prints matrix
-		
+
 		std::cout << "[";
 		for (int j = 0; j < 2; j++) {
 
@@ -182,8 +182,8 @@ void matrixPrint() {
 		}
 		std::cout << "]";
 		std::cout << std::endl;
-	} 
+	}
 
-	
+
 
 }
